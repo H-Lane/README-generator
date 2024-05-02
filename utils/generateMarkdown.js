@@ -58,11 +58,12 @@ function generateMarkdown(data) {
   ${data.contribution}
 
   ## Contact
-  ${data.username}
-  ${data.email}
+  For any issues or questions feel free to reach out to me via email at: ${data.email}
+  
+  Find me on GitHub at: [${data.username}](https://www.github.com/${data.username})
 
   ## Deployed Application
-  ${data.deployment}
+  This application is deployed live at [${data.deployment}](${data.deployment})
 
   ${renderLicenseSection(data.license)}
 `;
