@@ -18,7 +18,7 @@ const questions = [
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
   fs.writeFile(`${fileName}.md`, data, (err) =>
-    err ? console.error(err) : console.log(`Write Success`)
+    err ? console.error(err) : console.log(`Your README has been generated!`)
   );
 }
 
@@ -49,7 +49,7 @@ function init() {
       {
         type: `input`,
         message: questions[4],
-        name: `constribution`,
+        name: `contribution`,
       },
       {
         type: `input`,
@@ -62,30 +62,24 @@ function init() {
         name: `license`,
         choices: [
           "None",
-          "Apache 2.0",
-          "BSD 3-Clause",
-          "BSD 2-Clause",
-          "Attribution 4.0 Intnl.",
-          "Attribution-ShareAlike 4.0 Intnl.",
-          "Attribution-NonCommercial 4.0 Intnl.",
-          "Attribution-NoDerivatives 4.0 Intnl.",
-          "Attribution-NonCommercial-ShareAlike 4.0 Intnl.",
-          "Attribution-NonCommercial-NoDerivatives 4.0 Intnl.",
-          "Eclipse Public 1.0",
-          "GNU GPL v3",
-          "GNU GPL v2",
-          "GNU AGPL v3",
-          "GNU LGPL v3",
-          "GNU FDL v1.3",
-          "IBM Public v1.0",
+          "Apache",
+          "BSD3",
+          "BSD2",
+          "EPL",
+          "GPLv3",
+          "GPLv2",
+          "AGPLv3",
+          "LGPLv3",
+          "FDLv1.3",
+          "IPL",
           "MIT",
-          "Mozilla Public 2.0",
-          "Attribution License (BY)",
-          "Open Database License (ODbL)",
-          "Public Domain Dedication and License (PDDL)",
-          "The Perl License",
-          "The Artistic License 2.0",
-          "The zlib/libpng License",
+          "MPL",
+          "ODC_BY",
+          "ODbL",
+          "PDDL",
+          "Perl",
+          "Artistic2.0",
+          "Zlib",
         ],
       },
       {
