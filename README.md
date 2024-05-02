@@ -28,7 +28,7 @@ The Markdown Generator can be found at [./utils/generateMarkdown.js](./utils/gen
 
 A video walkthrough displaying the functionality of this application can be found [here](https://drive.google.com/file/d/1JrUv3GMKJxd6eyAsV5buDGxsMVhM1i-a/view)
 
-An example of a README generated using this application can be found at [./EXAMPLE.md.md](./EXAMPLE.md.md)
+An example of a README generated using this application can be found at [./EXAMPLE.md](./EXAMPLE.md)
 
 ## Credits
 
