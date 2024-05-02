@@ -1,7 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require(`inquirer`);
 const fs = require(`fs`);
-const markdown = require(`./utils/generateMarkdown`);
+const mrkdwn = require(`./utils/generateMarkdown.js`);
 // TODO: Create an array of questions for user input
 const questions = [
   `What would you like your project title to be?`,
@@ -13,6 +13,7 @@ const questions = [
   `What license is your project under?`,
   `What is your Github username?`,
   `What is your Email address?`,
+  `Where is the live deployment of your application?`
 ];
 
 // TODO: Create a function to write README file
@@ -92,8 +93,13 @@ function init() {
         message: questions[8],
         name: `email`,
       },
+      {
+        type: `input`,
+        message: questions[9],
+        name: `deployment`
+      }
     ])
-    .then((data) => markdown.generateMarkdown(data));
+    .then((data) => mrkdwn.generateMarkdown(data));
 }
 
 // Function call to initialize app
