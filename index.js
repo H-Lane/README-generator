@@ -102,7 +102,7 @@ function init() {
       }
     ])
     .then((data) => {
-        writeToFile(`${data.title}.md`, data)
+        writeToFile(`${data.title}`, data)
     })
 }
 
