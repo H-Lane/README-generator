@@ -41,7 +41,7 @@ function generateMarkdown(data) {
   - [Usage](#usage)
   - [Test](#test)
   - [Contribution](#contribution)
-  - [Contact](#contact)
+  - [Questions](#questions)
   - [Deployed Application](#deployed-application)
   ${renderLicenseLink(data.license)}
 
@@ -57,7 +57,7 @@ function generateMarkdown(data) {
   ## Contribution
   ${data.contribution}
 
-  ## Contact
+  ## Questions
   For any issues or questions feel free to reach out to me via email at: ${data.email}
   
   Find me on GitHub at: [${data.username}](https://www.github.com/${data.username})
